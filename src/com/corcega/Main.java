@@ -14,7 +14,8 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        int loc = 1;
+        int loc = 64;
+//        int loc = 1;
         while (true) {
             System.out.println(locations.get(loc).getDescription());
             if (loc == 0) {
