@@ -77,11 +77,11 @@ public class Locations implements Map<Integer, Location>  {
 //            }
 //        }
 
-        try(Scanner locRead = new Scanner(new BufferedReader(new FileReader("locations_big.txt")));
-            Scanner dirRead = new Scanner(new BufferedReader(new FileReader("directions_big.txt")))) {
+        try(BufferedReader locRead = new BufferedReader(new FileReader("locations_big.txt"));
+            BufferedReader dirRead = new BufferedReader(new FileReader("directions_big.txt"))) {
+            String input;
             //Read locations
-            while(locRead.hasNextLine()) {
-                String input = locRead.nextLine();
+            while((input = locRead.readLine()) != null) {
                 String[] data = input.split(",");
                 int loc = Integer.parseInt(data[0]);
                 String des = data[1];
@@ -89,8 +89,7 @@ public class Locations implements Map<Integer, Location>  {
                 locations.put(loc, new Location(loc, des, tempExit));
             }
             //Read exits
-            while(dirRead.hasNextLine()) {
-                String input = dirRead.nextLine();
+            while((input = dirRead.readLine()) != null) {
                 String[] data = input.split(",");
                 int loc = Integer.parseInt(data[0]);
                 String dir = data[1];
@@ -101,8 +100,6 @@ public class Locations implements Map<Integer, Location>  {
         } catch(IOException e) {
             e.printStackTrace();
         }
-
-
     }
     @Override
     public int size() {
