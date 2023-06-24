@@ -1,6 +1,7 @@
 package com.corcega;
 
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class Location {
@@ -12,7 +13,7 @@ public class Location {
                     Map<String, Integer> exits) {
         this.locationID = locationID;
         this.description = description;
-        this.exits = new HashMap<>();
+        this.exits = new LinkedHashMap<>();
         if (exits != null) {
             for (String key : exits.keySet()) { //Checks for fail Integer
                 if (exits.get(key) != null) {
@@ -36,7 +37,7 @@ public class Location {
     }
 
     public Map<String, Integer> getExits() {
-        return new HashMap<String, Integer>(exits);
+        return new LinkedHashMap<>(exits);
     }
 
     protected void addExit(String direction, int location) {

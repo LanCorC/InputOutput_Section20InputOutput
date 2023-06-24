@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bae80cb-8bf2-4b0d-a8d6-1079e6a56766" name="Changes" comment="Section 20.317(JavaFX; Load Big Locations and Edits Files): short lesson - larger files, preparing for next challenge. added _big.txt versions">
+    <list default="true" id="0bae80cb-8bf2-4b0d-a8d6-1079e6a56766" name="Changes" comment="Section 20.318(JavaFX; Challenge): Mini Challenge part2 - edited out use of scanner for the challenge, more streamline&#10;&#10;(Challenge: Turn the static block into 'try-with-resources')">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/directions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/directions.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locations.txt" beforeDir="false" afterPath="$PROJECT_DIR$/locations.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/corcega/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/corcega/Location.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/corcega/Locations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/corcega/Locations.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,7 +40,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.Locations">
     <configuration name="Locations" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.corcega.Locations" />
       <module name="InputOutput_Section20InputOutput" />
@@ -66,8 +69,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Locations" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -115,7 +118,21 @@
       <option name="project" value="LOCAL" />
       <updated>1687584292731</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Section 20.318(JavaFX; Challenge): Mini Challenge part1 - my implementation, works!&#10;&#10;(Challenge: Turn the static block into 'try-with-resources')">
+      <created>1687585939099</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1687585939099</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Section 20.318(JavaFX; Challenge): Mini Challenge part2 - edited out use of scanner for the challenge, more streamline&#10;&#10;(Challenge: Turn the static block into 'try-with-resources')">
+      <created>1687586618622</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1687586618622</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -135,6 +152,8 @@
     <MESSAGE value="Section 20.314(JavaFX; Try with Resources):&#10;introduced to declaring &quot;throw Exception..&quot; and  the try-with-resources statement" />
     <MESSAGE value="Section 20.316(JavaFX; BufferedReader): added the read of exits off &quot;directions.txt&quot; with buffered reader, and how to use string.split(regEx); instead of scanner.next()/.nextLine(), added &quot;directions.txt&quot; to versioned files" />
     <MESSAGE value="Section 20.317(JavaFX; Load Big Locations and Edits Files): short lesson - larger files, preparing for next challenge. added _big.txt versions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Section 20.317(JavaFX; Load Big Locations and Edits Files): short lesson - larger files, preparing for next challenge. added _big.txt versions" />
+    <MESSAGE value="Section 20.318(JavaFX; Challenge): Mini Challenge part1 - my implementation, works!&#10;&#10;(Challenge: Turn the static block into 'try-with-resources')" />
+    <MESSAGE value="Section 20.318(JavaFX; Challenge): Mini Challenge part2 - edited out use of scanner for the challenge, more streamline&#10;&#10;(Challenge: Turn the static block into 'try-with-resources')" />
+    <option name="LAST_COMMIT_MESSAGE" value="Section 20.318(JavaFX; Challenge): Mini Challenge part2 - edited out use of scanner for the challenge, more streamline&#10;&#10;(Challenge: Turn the static block into 'try-with-resources')" />
   </component>
 </project>
