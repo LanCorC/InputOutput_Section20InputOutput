@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bae80cb-8bf2-4b0d-a8d6-1079e6a56766" name="Changes" comment="Section 20.316(JavaFX; BufferedReader): added the read of exits off &quot;directions.txt&quot; with buffered reader, and how to use string.split(regEx); instead of scanner.next()/.nextLine(), added &quot;directions.txt&quot; to versioned files">
+    <list default="true" id="0bae80cb-8bf2-4b0d-a8d6-1079e6a56766" name="Changes" comment="Section 20.317(JavaFX; Load Big Locations and Edits Files): short lesson - larger files, preparing for next challenge. added _big.txt versions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/directions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/directions.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locations.txt" beforeDir="false" afterPath="$PROJECT_DIR$/locations.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/corcega/Locations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/corcega/Locations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/corcega/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/corcega/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687499811676</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Section 20.317(JavaFX; Load Big Locations and Edits Files): short lesson - larger files, preparing for next challenge. added _big.txt versions">
+      <created>1687584292731</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1687584292731</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -130,6 +134,7 @@
     <MESSAGE value="Section 20.313(JavaFX; Writing content - FileWriter class and Finally block): Introduction to the FileWriter class, .write(), .close() and IOException handling" />
     <MESSAGE value="Section 20.314(JavaFX; Try with Resources):&#10;introduced to declaring &quot;throw Exception..&quot; and  the try-with-resources statement" />
     <MESSAGE value="Section 20.316(JavaFX; BufferedReader): added the read of exits off &quot;directions.txt&quot; with buffered reader, and how to use string.split(regEx); instead of scanner.next()/.nextLine(), added &quot;directions.txt&quot; to versioned files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Section 20.316(JavaFX; BufferedReader): added the read of exits off &quot;directions.txt&quot; with buffered reader, and how to use string.split(regEx); instead of scanner.next()/.nextLine(), added &quot;directions.txt&quot; to versioned files" />
+    <MESSAGE value="Section 20.317(JavaFX; Load Big Locations and Edits Files): short lesson - larger files, preparing for next challenge. added _big.txt versions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Section 20.317(JavaFX; Load Big Locations and Edits Files): short lesson - larger files, preparing for next challenge. added _big.txt versions" />
   </component>
 </project>
