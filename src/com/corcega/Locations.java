@@ -41,9 +41,7 @@ public class Locations implements Map<Integer, Location>  {
                 }
                 locWriter.newLine();
             }
-
         }
-
     }
 
     static {
@@ -52,7 +50,7 @@ public class Locations implements Map<Integer, Location>  {
             String input;
             //Read locations
             while((input = locRead.readLine()) != null) {
-                String[] data = input.split(",");
+                String[] data = input.split(",", 2);
                 int loc = Integer.parseInt(data[0]);
                 String des = data[1];
                 Map<String, Integer> tempExit = new LinkedHashMap<>();
