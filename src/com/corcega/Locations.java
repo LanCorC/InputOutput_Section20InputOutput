@@ -7,41 +7,23 @@ public class Locations implements Map<Integer, Location>  {
     private static Map<Integer, Location> locations = new LinkedHashMap<>();
 
     public static void main(String[] args)  throws IOException {
-//        try(FileWriter locFile = new FileWriter("locations.txt");
-//        FileWriter dirFile = new FileWriter("directions.txt")) {
-//            for(Location location : locations.values()) {
-//                locFile.write(location.getLocationID() + "," + location.getDescription() + "\n");
-//                for (String direction : location.getExits().keySet()) {
-//                    dirFile.write(location.getLocationID() + ","
-//                            + direction + "," + location.getExits().get(direction) + "\n");
-//                }
-//             }
-//        }
-
-//        part1:
-//        modify program, make it BufferedReader to read in the locations + run program
-//        Part2:
-//        modify main method - use BufferedWriter
-//        open locations.txt and directions.txt to check correct data
-//        another change: allow the 0 (quit location) exits before using newly created files
-//        HINT change the 3x instances of hashMap -> linkedHashMap in Location class + the 1x in Locations in order to compare more easily
-
-        try(BufferedWriter locWriter = new BufferedWriter(new FileWriter("locations.txt"));
-        BufferedWriter dirWriter = new BufferedWriter(new FileWriter("directions.txt"))) {
+        try (DataOutputStream locFile = new DataOutputStream(new BufferedOutputStream(new FileOutputStream("locations.dat")))) {
             for(Location location : locations.values()) {
-                locWriter.write(location.getLocationID() + "," + location.getDescription());
+                locFile.writeInt(location.getLocationID());
+                locFile.writeUTF(location.getDescription());
+                System.out.println("Writing location " + location.getLocationID() + " : " + location.getDescription());
+                System.out.println("Writing " + (location.getExits().size() -1) + " exits.");
+                locFile.writeInt(location.getExits().size() - 1);
                 for(String direction : location.getExits().keySet()) {
-                    //temp -- to remove the exit, for comparison purposes. removing this "if" block will not cause issues
-                    if (direction.equals("Q")) {
-                        continue;
+                    if (!direction.equalsIgnoreCase("Q")) {
+                        System.out.println("\t\t" + direction + "," + location.getExits().get(direction));
+                        locFile.writeUTF(direction);
+                        locFile.writeInt(location.getExits().get(direction));
                     }
-                    //temp
-                    dirWriter.write(location.getLocationID() +","+ direction +"," + location.getExits().get(direction));
-                    dirWriter.newLine();
                 }
-                locWriter.newLine();
             }
         }
+
     }
 
     static {

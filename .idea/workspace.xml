@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bae80cb-8bf2-4b0d-a8d6-1079e6a56766" name="Changes" comment="Section 20.319(JavaFX; Buffered Writer and Challenge): Part 2 - his iteration; during this I fixed locations_big descriptions using .split(regex, limit).">
+    <list default="true" id="0bae80cb-8bf2-4b0d-a8d6-1079e6a56766" name="Changes" comment="Section 20.320(JavaFX; Byte Streams)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/corcega/Locations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/corcega/Locations.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687671275095</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Section 20.320(JavaFX; Byte Streams)">
+      <created>1687675378580</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1687675378580</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -166,6 +174,7 @@
     <MESSAGE value="Section 20.318(JavaFX; Challenge): Mini Challenge part2 - edited out use of scanner for the challenge, more streamline&#10;&#10;(Challenge: Turn the static block into 'try-with-resources')" />
     <MESSAGE value="Section 20.319(JavaFX; Buffered Writer and Challenge): Part 1 - my iteration. it works very well! changes instances of 'hashmap' to 'linkedhashmap' in order to easily compare data from data_big manually" />
     <MESSAGE value="Section 20.319(JavaFX; Buffered Writer and Challenge): Part 2 - his iteration; during this I fixed locations_big descriptions using .split(regex, limit)." />
-    <option name="LAST_COMMIT_MESSAGE" value="Section 20.319(JavaFX; Buffered Writer and Challenge): Part 2 - his iteration; during this I fixed locations_big descriptions using .split(regex, limit)." />
+    <MESSAGE value="Section 20.320(JavaFX; Byte Streams)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Section 20.320(JavaFX; Byte Streams)" />
   </component>
 </project>
