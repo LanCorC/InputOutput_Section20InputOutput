@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0bae80cb-8bf2-4b0d-a8d6-1079e6a56766" name="Changes" comment="Section 20.320(JavaFX; Byte Streams)">
+      <change afterPath="$PROJECT_DIR$/src/com/corcega/ShiftInt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/corcega/Locations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/corcega/Locations.java" afterDir="false" />
     </list>
@@ -37,7 +38,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Locations">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Locations" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.corcega.Locations" />
       <module name="InputOutput_Section20InputOutput" />
@@ -64,10 +65,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ShiftInt" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.corcega.ShiftInt" />
+      <module name="InputOutput_Section20InputOutput" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.corcega.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Locations" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.ShiftInt" />
+        <item itemvalue="Application.Locations" />
       </list>
     </recent_temporary>
   </component>

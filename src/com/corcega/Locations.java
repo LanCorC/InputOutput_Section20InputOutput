@@ -27,29 +27,54 @@ public class Locations implements Map<Integer, Location>  {
     }
 
     static {
-        try(BufferedReader locRead = new BufferedReader(new FileReader("locations_big.txt"));
-            BufferedReader dirRead = new BufferedReader(new FileReader("directions_big.txt"))) {
-            String input;
-            //Read locations
-            while((input = locRead.readLine()) != null) {
-                String[] data = input.split(",", 2);
-                int loc = Integer.parseInt(data[0]);
-                String des = data[1];
-                Map<String, Integer> tempExit = new LinkedHashMap<>();
-                locations.put(loc, new Location(loc, des, tempExit));
-            }
-            //Read exits
-            while((input = dirRead.readLine()) != null) {
-                String[] data = input.split(",");
-                int loc = Integer.parseInt(data[0]);
-                String dir = data[1];
-                int des = Integer.parseInt(data[2]);
-                Location location = locations.get(loc);
-                location.addExit(dir, des);
+        try(DataInputStream locFile = new DataInputStream(new BufferedInputStream(new FileInputStream("locations.dat")))) {
+            boolean eof = false;
+
+            while(!eof) {
+                try {
+                    Map<String, Integer> exits = new LinkedHashMap<>();
+                    int locID = locFile.readInt();
+                    String description = locFile.readUTF();
+                    int numExits = locFile.readInt();
+                    System.out.println("Read location " + locID + " : " + description);
+                    System.out.println("Found " + numExits + " exits");
+                    for(int i = 0; i<numExits; i++) {
+                        String direction = locFile.readUTF();
+                        int destination = locFile.readInt();
+                        exits.put(direction, destination);
+                        System.out.println("\t\t" + direction + "," + destination);
+                    }
+                    locations.put(locID, new Location(locID, description, exits));
+                } catch(EOFException e) {
+                    eof = true;
+                }
             }
         } catch(IOException e) {
             e.printStackTrace();
         }
+//        try(BufferedReader locRead = new BufferedReader(new FileReader("locations_big.txt"));
+//            BufferedReader dirRead = new BufferedReader(new FileReader("directions_big.txt"))) {
+//            String input;
+//            //Read locations
+//            while((input = locRead.readLine()) != null) {
+//                String[] data = input.split(",", 2);
+//                int loc = Integer.parseInt(data[0]);
+//                String des = data[1];
+//                Map<String, Integer> tempExit = new LinkedHashMap<>();
+//                locations.put(loc, new Location(loc, des, tempExit));
+//            }
+//            //Read exits
+//            while((input = dirRead.readLine()) != null) {
+//                String[] data = input.split(",");
+//                int loc = Integer.parseInt(data[0]);
+//                String dir = data[1];
+//                int des = Integer.parseInt(data[2]);
+//                Location location = locations.get(loc);
+//                location.addExit(dir, des);
+//            }
+//        } catch(IOException e) {
+//            e.printStackTrace();
+//        }
     }
     @Override
     public int size() {
