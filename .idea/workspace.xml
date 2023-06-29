@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bae80cb-8bf2-4b0d-a8d6-1079e6a56766" name="Changes" comment="Section 20.322(JavaFX; Object Input Output including Serialization): introduction to how serialization works, implement Serializable, serialVersionUID, and how ObjectOutput/ObjectInput streams look like">
+    <list default="true" id="0bae80cb-8bf2-4b0d-a8d6-1079e6a56766" name="Changes" comment="Section 20.323(JavaFX; Finish Object I/O and RandomAccessFile class): theory heavy introduction to RandomAccessFile, about index and data (record) sections, filepointers, offsets">
+      <change afterPath="$PROJECT_DIR$/src/com/corcega/IndexRecord.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/corcega/Locations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/corcega/Locations.java" afterDir="false" />
     </list>
@@ -31,12 +32,13 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/Matty/IdeaProjects/RandomAccessFile_Section20InputOutput"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Locations" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.corcega.Locations" />
@@ -178,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688004188733</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Section 20.323(JavaFX; Finish Object I/O and RandomAccessFile class): theory heavy introduction to RandomAccessFile, about index and data (record) sections, filepointers, offsets">
+      <created>1688014321138</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1688014321138</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -205,6 +214,7 @@
     <MESSAGE value="Section 20.320(JavaFX; Byte Streams)" />
     <MESSAGE value="Section 20.321(JavaFX; Reading Binary Data and End of File Exceptions): added read of locations.dat, introduced to DataInputStream + Buffered ver, and FileInputStream" />
     <MESSAGE value="Section 20.322(JavaFX; Object Input Output including Serialization): introduction to how serialization works, implement Serializable, serialVersionUID, and how ObjectOutput/ObjectInput streams look like" />
-    <option name="LAST_COMMIT_MESSAGE" value="Section 20.322(JavaFX; Object Input Output including Serialization): introduction to how serialization works, implement Serializable, serialVersionUID, and how ObjectOutput/ObjectInput streams look like" />
+    <MESSAGE value="Section 20.323(JavaFX; Finish Object I/O and RandomAccessFile class): theory heavy introduction to RandomAccessFile, about index and data (record) sections, filepointers, offsets" />
+    <option name="LAST_COMMIT_MESSAGE" value="Section 20.323(JavaFX; Finish Object I/O and RandomAccessFile class): theory heavy introduction to RandomAccessFile, about index and data (record) sections, filepointers, offsets" />
   </component>
 </project>
