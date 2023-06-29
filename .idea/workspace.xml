@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bae80cb-8bf2-4b0d-a8d6-1079e6a56766" name="Changes" comment="Section 20.320(JavaFX; Byte Streams)">
-      <change afterPath="$PROJECT_DIR$/src/com/corcega/ShiftInt.java" afterDir="false" />
+    <list default="true" id="0bae80cb-8bf2-4b0d-a8d6-1079e6a56766" name="Changes" comment="Section 20.321(JavaFX; Reading Binary Data and End of File Exceptions): added read of locations.dat, introduced to DataInputStream + Buffered ver, and FileInputStream">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locations.dat" beforeDir="false" afterPath="$PROJECT_DIR$/locations.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/corcega/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/corcega/Location.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/corcega/Locations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/corcega/Locations.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +39,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.Locations">
     <configuration name="Locations" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.corcega.Locations" />
       <module name="InputOutput_Section20InputOutput" />
@@ -80,9 +81,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Locations" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.ShiftInt" />
-        <item itemvalue="Application.Locations" />
       </list>
     </recent_temporary>
   </component>
@@ -165,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687675378580</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Section 20.321(JavaFX; Reading Binary Data and End of File Exceptions): added read of locations.dat, introduced to DataInputStream + Buffered ver, and FileInputStream">
+      <created>1687758434518</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1687758434518</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -190,6 +198,7 @@
     <MESSAGE value="Section 20.319(JavaFX; Buffered Writer and Challenge): Part 1 - my iteration. it works very well! changes instances of 'hashmap' to 'linkedhashmap' in order to easily compare data from data_big manually" />
     <MESSAGE value="Section 20.319(JavaFX; Buffered Writer and Challenge): Part 2 - his iteration; during this I fixed locations_big descriptions using .split(regex, limit)." />
     <MESSAGE value="Section 20.320(JavaFX; Byte Streams)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Section 20.320(JavaFX; Byte Streams)" />
+    <MESSAGE value="Section 20.321(JavaFX; Reading Binary Data and End of File Exceptions): added read of locations.dat, introduced to DataInputStream + Buffered ver, and FileInputStream" />
+    <option name="LAST_COMMIT_MESSAGE" value="Section 20.321(JavaFX; Reading Binary Data and End of File Exceptions): added read of locations.dat, introduced to DataInputStream + Buffered ver, and FileInputStream" />
   </component>
 </project>
