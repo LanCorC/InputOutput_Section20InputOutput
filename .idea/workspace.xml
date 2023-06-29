@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bae80cb-8bf2-4b0d-a8d6-1079e6a56766" name="Changes" comment="Section 20.324(JavaFX; Create Random Access File): introduction to RandomAccessFile class, writing synchronously, keeping track of pointer and data offset, creating IndexRecord to write in memory whilst writing locations data on storage">
+    <list default="true" id="0bae80cb-8bf2-4b0d-a8d6-1079e6a56766" name="Changes" comment="Section 20.325(JavaFX; Update Static Initializer Block With Random File Access):&#10;finishing the .main() write of the index into storage, replacing the static block by loading the index into memory,">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/corcega/Locations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/corcega/Locations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/corcega/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/corcega/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +22,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -38,7 +44,7 @@
     "last_opened_file_path": "C:/Users/Matty/IdeaProjects/RandomAccessFile_Section20InputOutput"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Locations">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Locations" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.corcega.Locations" />
       <module name="InputOutput_Section20InputOutput" />
@@ -80,8 +86,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Locations" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Locations" />
         <item itemvalue="Application.ShiftInt" />
       </list>
     </recent_temporary>
@@ -193,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688018451913</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Section 20.325(JavaFX; Update Static Initializer Block With Random File Access):&#10;finishing the .main() write of the index into storage, replacing the static block by loading the index into memory,">
+      <created>1688019939650</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1688019939650</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -222,7 +235,8 @@
     <MESSAGE value="Section 20.322(JavaFX; Object Input Output including Serialization): introduction to how serialization works, implement Serializable, serialVersionUID, and how ObjectOutput/ObjectInput streams look like" />
     <MESSAGE value="Section 20.323(JavaFX; Finish Object I/O and RandomAccessFile class): theory heavy introduction to RandomAccessFile, about index and data (record) sections, filepointers, offsets" />
     <MESSAGE value="Section 20.324(JavaFX; Create Random Access File): introduction to RandomAccessFile class, writing synchronously, keeping track of pointer and data offset, creating IndexRecord to write in memory whilst writing locations data on storage" />
-    <option name="LAST_COMMIT_MESSAGE" value="Section 20.324(JavaFX; Create Random Access File): introduction to RandomAccessFile class, writing synchronously, keeping track of pointer and data offset, creating IndexRecord to write in memory whilst writing locations data on storage" />
+    <MESSAGE value="Section 20.325(JavaFX; Update Static Initializer Block With Random File Access):&#10;finishing the .main() write of the index into storage, replacing the static block by loading the index into memory," />
+    <option name="LAST_COMMIT_MESSAGE" value="Section 20.325(JavaFX; Update Static Initializer Block With Random File Access):&#10;finishing the .main() write of the index into storage, replacing the static block by loading the index into memory," />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/RandomAccessFile_Section20InputOutput$Locations.ic" NAME="Locations Coverage Results" MODIFIED="1688019234119" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
